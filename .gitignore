@@ -1,0 +1,6 @@
+*.code-workspace
+node_modules
+dist
+bookmarks.json
+.DS_Store
+.idea
