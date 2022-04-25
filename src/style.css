@@ -6,8 +6,15 @@
     src: url(assets/Fonts/cour.ttf);
 }
 
+html {
+    background-color: #201533;
+    color: #ffffff
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: #201533;
+    color:#ffffff
 }
 
 #banner {
@@ -25,3 +32,19 @@ body {
     display:block;
 
 }
+
+.nav-bar {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    min-height: 0;
+    height: 41px;
+    background-color: #0d001a; 
+    color: aliceblue;
+    top:54%;
+    position: relative;
+    margin-bottom: 0px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    }
