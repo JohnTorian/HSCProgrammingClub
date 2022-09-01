@@ -1,11 +1,17 @@
-# HSCProgrammingClub
-The Hampden-Sydney Programming Club's website
+# HSC Programming Club
+## Getting Started
+First, make sure you have installed [node](https://nodejs.org/en/) using [nvm](https://github.com/nvm-sh/nvm). If you are using Windows, I recommend [setting up Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install). Then [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository. Once cloned, run the following command to install required Node.js packages.
+```bash
+$ npm install
+```
+Now you can start a testing server that will automatically reload as you make changes.
+```bash
+$ npm start
+```
+To build the site for production
+```bash
+$ npm run build
+```
+which will place the bundled files in the `./dist` directory.
 
-HOW TO GET OUR GLORIOUS WEBSITE WORKING ON YOUR MACHINE! (If you run windows, sorry mac users)
-
-1) Get windows subsystem for linux (wsl)
-    Open a powershell window >>as an administrator<< and run wsl --install
-
-2) Get node version manager (nvm)
-
-3) use nvm to install node package manager (npm)
+_The API urls are different for development and production. The switch is handled automatically by vite environment variable._
