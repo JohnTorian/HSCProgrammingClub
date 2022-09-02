@@ -1,0 +1,332 @@
+body{
+    background-color:#252323;
+    overflow-x: hidden;
+}
+
+/*Colors*/
+/*#9d183d*/
+/*#b1b7bb*/
+
+/* Navigation */
+
+.nav-bar ul {
+    width:fit-content;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    float: right;
+    margin-right: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+}
+.nav-bar a{
+    color:azure;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Lexend', sans-serif;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+.home-bar {
+    background-color:#252323;
+    width: 10px;
+    height:5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.projects-bar {
+    background-color:#252323;
+    width: 5px;
+    height:5px;
+    padding-left: 5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.contacts-bar {
+    background-color:#252323;
+    width: 10px;
+    height:5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.home-link:hover .home-bar{
+    background-color: #9d183d;
+    animation: home-bar-stretch;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease; 
+}
+
+@keyframes home-bar-stretch{
+    0%{
+        width: 10px;
+    }
+    100%{
+        width: 88px;
+    }
+}
+
+
+.projects-link:hover .projects-bar{
+    background-color: #9d183d;
+    animation: projects-bar-stretch;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease; 
+}
+
+@keyframes projects-bar-stretch{
+    0%{
+        width: 10px;
+    }
+    100%{
+        width: 115px;
+    }
+}
+
+.contacts-link:hover .contacts-bar{
+    background-color: #9d183d;
+    animation: contacts-bar-stretch;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease; 
+}
+
+@keyframes contacts-bar-stretch{
+    0%{
+        width: 10px;
+    }
+    100%{
+        width: 132px;
+    }
+}
+
+.home-link:is .home-bar{
+    background-color: #9d183d;
+}
+
+.projects-link:is .projects-bar{
+    background-color: #9d183d;
+    
+}
+
+
+.contacts-link:is .contacts-bar{
+    background-color: #9d183d;
+}
+
+.socials{
+    float: left;
+    display: flexbox;
+    width: fit-content;
+    padding-left:0;
+    border-radius: 20px;
+    position:fixed;
+    bottom: 40%;
+    left:-2%;
+    z-index: 1;
+}
+
+.socials a{
+    box-shadow: 0px 2px 3px black;
+}
+.socials a:hover{
+    animation-name: socialsHover;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+ 
+ @keyframes socialsHover{
+    100%{
+     background-color: #9d183d;
+    }
+  
+}
+
+.introduction .welcome{
+    color:azure;
+    font-family: 'Lexend', sans-serif;
+    text-shadow: 0px 2px 5px black;
+    font-size: 90px;
+    position: absolute;
+    right:55%;
+    bottom: 45%;
+    width:fit-content;
+    z-index: 5;
+}
+
+.comma{
+    color:#9d183d;
+    font-family: 'Lexend', sans-serif;
+    text-shadow: 0px 2px 5px black;
+    font-size: 90px;
+    position: absolute;
+    right:50%;
+    bottom: 45%;
+    width:fit-content;
+    z-index: 5;
+}
+
+.introduction h4{
+    color:azure;
+    font-family: 'Lexend', sans-serif;
+    text-shadow: 0px 2px 5px black;
+    font-size: 40px;
+    position: absolute;
+    right:48%;
+    bottom: 30%;
+    width:fit-content;
+    z-index: 5;
+}
+
+
+.scroll-text-1 {
+    color:#3a3737;
+    font-size: 40px;
+    position:fixed;
+    bottom: 75%;
+    font-family: 'Varela Round', sans-serif;
+    animation: scroll-animation-forward-1 25s linear infinite;
+    z-index: -5;
+}
+
+.scroll-text-2 {
+    color:#3a3737;
+    font-size: 40px;
+    position:fixed;
+    bottom: 65%;
+    font-family: 'Varela Round', sans-serif;
+    animation: scroll-animation-backward-1 60s linear infinite;
+    z-index: -5;
+}
+
+.scroll-text-3 {
+    color:#3a3737;
+    font-size: 40px;
+    position:fixed;
+    bottom: 55%;
+    font-family: 'Varela Round', sans-serif;
+    animation: scroll-animation-forward-2 25s linear infinite;
+    animation-delay: 5s;
+    z-index: -5;
+}
+
+.scroll-text-4 {
+    color:#3a3737;
+    font-size: 40px;
+    position:fixed;
+    bottom: 45%;
+    font-family: 'Varela Round', sans-serif;
+    animation: scroll-animation-backward-2 25s linear infinite;
+    animation-delay: 7s;
+    z-index: -5;
+}
+
+.scroll-text-5 {
+    color:#3a3737;
+    font-size: 40px;
+    position:fixed;
+    bottom: 30%;
+    font-family: 'Varela Round', sans-serif;
+    animation: scroll-animation-forward-3 60s linear infinite;
+    animation-delay: 2s;
+    z-index: -5;
+}
+
+.scroll-text-6 {
+    color:#3a3737;
+    font-size: 40px;
+    position:fixed;
+    bottom: 10%;
+    font-family: 'Varela Round', sans-serif;
+    animation: scroll-animation-backward-3 25s linear infinite;
+    animation-delay: 5s;
+    z-index: -5;
+}
+
+.logo{
+    transform:scale(.6);
+    position: absolute;
+    bottom: -319px;
+    right: -265px;
+    z-index: -4;
+}
+  
+ @keyframes scroll-animation-forward-1 {
+      0%{
+         transform: translateX(-100%);
+      }
+      50%{
+        transform: translateX(100%);
+      }
+      100%{
+        transform: translateX(325%);
+      }
+  }
+
+  @keyframes scroll-animation-forward-2 {
+    0%{
+       transform: translateX(-100%);
+    }
+    50%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(325%);
+    }
+}
+
+@keyframes scroll-animation-forward-3 {
+    0%{
+       transform: translateX(-7000%);
+    }
+    50%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(7000%);
+    }
+}
+
+  @keyframes scroll-animation-backward-1 {
+    0%{
+       transform: translateX(7000%);
+    }
+    50%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-7000%);
+    }
+}
+
+@keyframes scroll-animation-backward-2 {
+    0%{
+       transform: translateX(400%);
+    }
+    50%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-animation-backward-3 {
+    0%{
+       transform: translateX(7000%);
+    }
+    50%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-7000%);
+    }
+}
+
